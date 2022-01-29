@@ -1,0 +1,114 @@
+/* ---------------------------- GRID CONTAINER ------------------------------------- */
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr [col]);
+    grid-template-rows: repeat(8, 1fr [lin]);
+    column-gap: 0.625rem;
+    row-gap: 0.625rem;
+    grid-template-areas: 
+    "place1 place2"
+    "place1 place2"
+    "place1 place3"
+    "place1 place3"
+    "place4 place4"
+    "place4 place4"
+    "place4 place4"
+    "place4 place4";
+
+    height: 80vw;
+    width: 85vw;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+}
+
+.content h1{
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.content h3{
+    margin: 1rem;
+
+    font-weight: 400;
+    font-size: 0.8rem; 
+}
+
+.item{
+    background-size: 120%;
+    filter: grayscale(0%);
+    transition: background-size  ease-in-out 0.5s, filter ease-in-out 0.5s;
+}
+
+.item h1{
+    width: 2.5rem;
+
+    border-bottom: 0.32rem solid orange;
+    
+    transition: width  ease-in-out 0.5s;
+}
+
+.item-1{
+    grid-area: place1;
+    background-image: url(/images/keyboard.jpg);
+    background-size: 145%;
+    background-position: center;
+
+}
+
+.item-2-1{
+    grid-area: place2;
+    background-image: url(/images/keycaps.jpg);
+    background-position: left;
+}
+
+.item-2-2{
+    grid-area: place3;
+    background-image: url(/images/mice.jpg);
+    background-position: left;
+
+}
+
+.item-3{
+    grid-area: place4;
+    background-image: url(/images/peripherals.jpg);
+    background-position: center;
+}
+
+.item:hover{
+    background-size: 160%;
+    filter: grayscale(70%);
+}
+
+.item:hover h1{
+    width: 7rem;
+}
+
+/* ---------------------------- GRID CONTAINER ------------------------------------- */
+
+/* ---------------------------- GRID CONTAINER RESPONSIVE------------------------------------- */
+@media all and (max-width: 800px){
+    .container{
+        height: 160vw;
+        width: 85vw;
+
+        grid-template-areas: 
+        "place1 place1"
+        "place1 place1"
+        "place2 place2"
+        "place3 place3"
+        "place3 place3"
+        "place4 place4"
+        "place4 place4"
+        "place4 place4";
+    }
+}
+/* ---------------------------- GRID CONTAINER RESPONSIVE------------------------------------- */
