@@ -58,7 +58,7 @@
 
 .item-1{
     grid-area: place1;
-    background-image: url(/images/keyboard.jpg);
+    background-image: url(images/keyboard.jpg);
     background-size: 145%;
     background-position: center;
 
@@ -66,20 +66,20 @@
 
 .item-2-1{
     grid-area: place2;
-    background-image: url(/images/keycaps.jpg);
+    background-image: url(images/keycaps.jpg);
     background-position: left;
 }
 
 .item-2-2{
     grid-area: place3;
-    background-image: url(/images/mice.jpg);
+    background-image: url(images/mice.jpg);
     background-position: left;
 
 }
 
 .item-3{
     grid-area: place4;
-    background-image: url(/images/peripherals.jpg);
+    background-image: url(images/peripherals.jpg);
     background-position: center;
 }
 
